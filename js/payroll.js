@@ -37,10 +37,26 @@ window.addEventListener('DOMContentLoaded', (event) => {
 const save = () => {
     try{
         let employeePayrollData = createEmployeePayroll();
+        createAndUpdateStorage(employeePayrollData);
     }catch (e) {
         return;
     }
 }
+
+// UC-12
+//Saving Employee Payroll to Local Storage
+function createAndUpdateStorage(employeePayrollData){
+    let employeePayrollList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
+    if(employeePayrollList != undefined){
+        employeePayrollList.push(employeePayrollData);
+    }
+    else{
+        employeePayrollList = [employeePayrollData];
+    }
+    alert(employeePayrollList.toString());
+    localStorage.setItem("EmployeePayrollList", JSON.stringify(employeePayrollList));
+}
+
 //function to populate employee object with html form data
 const createEmployeePayroll = () => {
     let employeePayrollData = new EmployeePayrollData();
