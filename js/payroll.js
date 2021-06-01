@@ -32,9 +32,8 @@ window.addEventListener('DOMContentLoaded',()=>{
         month.addEventListener('click',function(){
             year.addEventListener('click',function(){
                 try{
-                    const startDate = new Date(year.value,yearsArray.indexOf(month.value),day.value);
-                    console.log(startDate);
-                    employeePayrollData.startDate = startDate;
+                    let date = day.value + " " + month.value + " " + year.value;
+                    employeePayrollData.startDate = new Date(Date.parse(date));
                     dateError.textContent = "";
                 }catch(e){
                     dateError.textContent = e;

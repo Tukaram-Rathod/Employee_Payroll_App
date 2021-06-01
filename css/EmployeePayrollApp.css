@@ -4,7 +4,7 @@ body {
 }
 .header {
     padding: 15px 0;
-    background-color:rgb(208, 241, 245);
+    background-color:powderblue;
 }
 .header-content {
     display: flex;
@@ -27,7 +27,7 @@ body {
     font: normal normal bold 20px/25px Rubik;
     font-family: 'Rubik', sans-serif;
     letter-spacing: 0px;
-    color: rgba(8, 255, 8, 0.912);
+    color: midnightblue;
 }
 
 .emp-payroll { color:midnightblue ;}
@@ -36,10 +36,10 @@ body {
 
 .form-content {
     min-height: calc(100%-80px);
-    background-color: rgb(230, 236, 217);
+    background-color: ghostwhite;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: cneter;
     border: 0px solid green;
 }
 .form{
@@ -52,8 +52,8 @@ body {
     opacity: 1;
 }
 .form-head{
-    font: normal normal bold 24px/37px Calistoga;
-    font-family: 'Calistoga',bold;
+    font: normal normal  24px/37px Calistoga;
+    font-family: 'Calistoga', cursive;
     letter-spacing: 0px;
     color: #42515f;
     text-transform: capitalize;
@@ -193,8 +193,8 @@ select{
     text-shadow:none;
 }    
 .button:hover {
-    background: #2be706;
-    color: rgb(248, 243, 243);
+    background: #016ABC;
+    color: rgb(153, 140, 140);
     border: 1px solid #eee;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #eee;
